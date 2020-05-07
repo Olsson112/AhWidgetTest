@@ -7,24 +7,17 @@
 </head>
 <body>
 
-    <div style="height: 100em; background-color: aqua;">
+    <div id="widget"></div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://adventurehero.se/modules.js"></script>
+    <script>
+        (function (w,d,s,o,f,js,fjs) {
+            w['BumbleBookWidget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
+            js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
+            js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
+        }(window, document, 'script', 'BBWidget', 'https://adventurehero.se/widget'));
+        BBWidget("#widget", "5b1e6db15bdd080000f0b35a")
+    </script>
 
-        <div style="height: 90vh; overflow: auto;">
-
-            <div id="widget"></div>
-            <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-            <script src="https://adventurehero.se/modules.js"></script>
-            <script>
-                (function (w,d,s,o,f,js,fjs) {
-                    w['BumbleBookWidget']=o;w[o] = w[o] || function () { (w[o].q = w[o].q || []).push(arguments) };
-                    js = d.createElement(s), fjs = d.getElementsByTagName(s)[0];
-                    js.id = o; js.src = f; js.async = 1; fjs.parentNode.insertBefore(js, fjs);
-                }(window, document, 'script', 'BBWidget', 'https://adventurehero.se/widget'));
-                BBWidget("#widget", "5b1e6db15bdd080000f0b35a")
-            </script>
-
-        </div>
-
-    </div>
 </body>
 </html>
